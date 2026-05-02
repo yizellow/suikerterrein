@@ -39,6 +39,31 @@ const heroImages = [
     src: '/images/hero-8.jpeg',
     alt: 'Suikerterrein image 8',
     caption: 'Artistic community and urban change'
+  },
+  {
+    src: '/images/hero-9.jpeg',
+    alt: 'Suikerterrein image 9',
+    caption: 'Built fragments and shared working spaces'
+  },
+  {
+    src: '/images/hero-10.jpeg',
+    alt: 'Suikerterrein image 10',
+    caption: 'Everyday materials inside the terrain'
+  },
+  {
+    src: '/images/hero-11.jpeg',
+    alt: 'Suikerterrein image 11',
+    caption: 'Studios, workshops, and temporary structures'
+  },
+  {
+    src: '/images/hero-12.jpeg',
+    alt: 'Suikerterrein image 12',
+    caption: 'Post-industrial space in active use'
+  },
+  {
+    src: '/images/hero-13.jpeg',
+    alt: 'Suikerterrein image 13',
+    caption: 'Artist spaces shaped by time and reuse'
   }
 ]
 
@@ -67,27 +92,75 @@ const aboutSections = [
 const interviews = [
   {
     name: 'Maruschka & Laurens',
-    image: '/images/interview-maruschka-laurens.jpg',
-    description: 'Artists connected to Suikerterrein.',
-    summary: 'Interview summary placeholder...',
-    quote: 'Quote placeholder...',
-    audio: '/audio/maruschka-laurens.mp3'
+    label: 'Artist duo / ecology / community',
+    image: '/images/interview-maruschka-laurens.jpeg',
+    object: 'Nettle plant',
+    audio: '/audio/maruschka-laurens.mp3',
+    quote: 'Something that is rejected can actually be essential.',
+    summary: 'Maruschka and Laurens describe Suikerterrein as a place where low rent, informal exchange, and ecological thinking make artistic work possible, while also questioning whether the terrain functions as one shared community.',
+    themes: ['Low rent as survival', 'Invisible fences', 'Small clusters', 'Nature as social model'],
+    fragments: [
+      {
+        title: 'Community is more than proximity',
+        text: 'They distinguish between people simply renting spaces next to each other and a community that actively works together. Suikerterrein contains artists and generous neighbors, but they see the social structure as fragmented, with commercial interests and individual territories shaping the terrain.'
+      },
+      {
+        title: 'A practical condition for art',
+        text: 'For them, the low rent was not romantic; it was what made it possible to build an artistic life after art school. Because less income disappears into rent, more energy and money can be invested back into their work.'
+      },
+      {
+        title: 'Toward an ecological model',
+        text: 'They imagine a smaller, more community-based and nature-focused future place: not a huge terrain of many companies, but a setting where ten to fifteen people could share a clearer philosophy.'
+      }
+    ]
   },
   {
     name: 'Robert',
-    image: '/images/interview-robert.jpg',
-    description: 'Artist or cultural worker connected to the site.',
-    summary: 'Interview summary placeholder...',
-    quote: 'Quote placeholder...',
-    audio: '/audio/robert.mp3'
+    label: 'Stained glass / self-built studio',
+    image: '/images/interview-robert.jpeg',
+    object: 'A photograph of colored glass',
+    audio: '/audio/robert.mp3',
+    quote: 'We use the area with the uncertainty of life.',
+    summary: 'Robert speaks about building his own studio from containers and second-hand materials, accepting the 2030 deadline, and seeing temporary creative places as necessary stepping stones in the city.',
+    themes: ['Self-building', 'Temporary use', 'Uncertainty', 'Cultural memory'],
+    fragments: [
+      {
+        title: 'Building a place from what already lived',
+        text: 'Robert designed and built his studio with containers, reused roof plates, old wood, found materials, and help from people with different skills. The building had to meet city rules, but its atmosphere came from making new use of materials with previous lives.'
+      },
+      {
+        title: 'Certainty and openness',
+        text: 'He knows 2030 may be the deadline, but does not want to worry too early. For him, uncertainty is part of how he lives and works: a few things must be stable, while the rest can stay open.'
+      },
+      {
+        title: 'Stepping stones in the city',
+        text: 'Robert connects Suikerterrein to earlier temporary cultural spaces in Groningen. These places let people meet, work, dance, learn, and briefly step outside ordinary city life; if one disappears, something else has to grow somewhere.'
+      }
+    ]
   },
   {
     name: 'Floris',
-    image: '/images/interview-floris.jpg',
-    description: 'Artist or cultural worker connected to the site.',
-    summary: 'Interview summary placeholder...',
-    quote: 'Quote placeholder...',
-    audio: '/audio/floris.mp3'
+    label: 'Blue Plaza Compagnia / collective building',
+    image: '/images/interview-floris.jpeg',
+    object: 'Reused building materials',
+    audio: '/audio/floris.mp3',
+    quote: 'Almost everything here has a story.',
+    summary: 'Floris frames Suikerterrein as a broedplaats: a temporary place where artists and creative workers organized themselves, gathered reused materials, and built a shared working environment on the former sugar factory terrain.',
+    themes: ['Broedplaats', 'Post-industrial reuse', 'Collective organization', 'Future lobbying'],
+    fragments: [
+      {
+        title: 'From sugar factory to temporary initiatives',
+        text: 'Floris explains the site through its industrial past: the former factory, the canal, the vloeivelden, and the decision to use the area for temporary initiatives after demolition.'
+      },
+      {
+        title: 'A club of makers',
+        text: 'The group organized itself like an association with members, shared contributions, crowdfunding, and borrowed money. Their spaces were assembled from second-hand structures: beach houses, garden sheds, army units, shipping containers, and other salvaged materials.'
+      },
+      {
+        title: 'What survives after 2030',
+        text: 'People are already talking with the city and lobbying for parts of what evolved here to be included in future development. The concern is not only preserving buildings, but preserving the possibility of making, gathering, and experimenting.'
+      }
+    ]
   }
 ]
 
@@ -160,7 +233,7 @@ onBeforeUnmount(() => {
               :key="currentHeroImage.src"
               :src="currentHeroImage.src"
               :alt="currentHeroImage.alt"
-              class="h-[62vh] min-h-[360px] w-full object-cover grayscale-[20%] sm:h-[68vh]"
+              class="aspect-[16/10] w-full object-cover grayscale-[20%] sm:aspect-auto sm:h-[68vh] sm:min-h-[360px]"
             >
           </Transition>
         </div>
@@ -283,7 +356,7 @@ onBeforeUnmount(() => {
       </div>
     </section>
 
-    <section id="interviews" class="scroll-mt-24 border-b border-neutral-300 bg-[#342c25] text-stone-50">
+    <section id="interviews" class="scroll-mt-24 border-b border-neutral-300 bg-[#23312d] text-stone-50">
       <div class="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
         <div class="grid gap-8 md:grid-cols-[0.8fr_1.2fr]">
           <div>
@@ -296,41 +369,118 @@ onBeforeUnmount(() => {
           </div>
 
           <p class="max-w-4xl text-2xl leading-10 text-stone-300">
-            Interview fragments and summaries from people connected to Suikerterrein, gathered as part of an artist research process.
+            Three conversations trace Suikerterrein through self-built studios, informal support, ecological thinking, temporary land use, and the question of what may remain after 2030.
           </p>
         </div>
 
-        <div class="mt-14 grid gap-6 lg:grid-cols-3">
-          <article
-            v-for="interview in interviews"
-            :key="interview.name"
-            class="flex flex-col border border-stone-600 bg-[#2b251f]"
-          >
-            <img
-              :src="interview.image"
-              :alt="`${interview.name} interview portrait`"
-              class="aspect-[4/3] w-full object-cover grayscale-[25%]"
-            >
-
-            <div class="flex flex-1 flex-col p-6">
-              <p class="text-base uppercase tracking-[0.18em] text-stone-400">
-                Interview
-              </p>
-              <h3 class="mt-3 text-4xl font-normal text-stone-50">
-                {{ interview.name }}
-              </h3>
-              <p class="mt-3 text-xl leading-8 text-stone-300">
-                {{ interview.description }}
-              </p>
-              <p class="mt-5 text-xl leading-9 text-stone-200">
-                {{ interview.summary }}
-              </p>
-              <blockquote class="mt-6 border-l border-stone-400 pl-4 text-xl italic leading-9 text-stone-200">
-                "{{ interview.quote }}"
-              </blockquote>
-              <audio class="mt-6 w-full" controls :src="interview.audio" />
+        <div class="mt-14 grid gap-10 lg:grid-cols-[0.34fr_0.66fr]">
+          <aside class="border-t border-stone-500 pt-6 lg:sticky lg:top-28 lg:self-start">
+            <p class="text-base uppercase tracking-[0.22em] text-stone-400">
+              Interviewees
+            </p>
+            <div class="mt-6 grid gap-5">
+              <a
+                v-for="interview in interviews"
+                :key="interview.name"
+                :href="`#interview-${interview.name.toLowerCase().replaceAll(' ', '-').replaceAll('&', 'and')}`"
+                class="group border-l border-stone-500 pl-5 transition duration-200 hover:border-stone-100"
+              >
+                <span class="block text-2xl leading-tight text-stone-100">
+                  {{ interview.name }}
+                </span>
+                <span class="mt-2 block text-base leading-6 text-stone-400 group-hover:text-stone-300">
+                  {{ interview.label }}
+                </span>
+              </a>
             </div>
-          </article>
+          </aside>
+
+          <div class="grid gap-8">
+            <article
+              v-for="interview in interviews"
+              :id="`interview-${interview.name.toLowerCase().replaceAll(' ', '-').replaceAll('&', 'and')}`"
+              :key="interview.name"
+              class="scroll-mt-32 border border-stone-600 bg-[#1f2a27]"
+            >
+              <div class="grid">
+                <img
+                  :src="interview.image"
+                  :alt="`${interview.name} interview material`"
+                  class="aspect-[16/9] w-full object-cover grayscale-[20%]"
+                >
+
+                <div class="grid gap-8 p-6 sm:p-8 lg:grid-cols-[0.38fr_0.62fr]">
+                  <div>
+                    <p class="text-base uppercase tracking-[0.18em] text-stone-400">
+                      {{ interview.label }}
+                    </p>
+                    <h3 class="mt-3 text-4xl font-normal leading-tight text-stone-50 sm:text-5xl">
+                      {{ interview.name }}
+                    </h3>
+
+                    <blockquote class="mt-7 border-l border-stone-300 pl-5 text-2xl italic leading-9 text-stone-100">
+                      "{{ interview.quote }}"
+                    </blockquote>
+                  </div>
+
+                  <div>
+                    <p class="text-xl leading-8 text-stone-200">
+                      {{ interview.summary }}
+                    </p>
+
+                    <div class="mt-7 grid gap-4 border-t border-stone-600 pt-6 sm:grid-cols-2">
+                      <div>
+                        <p class="text-sm uppercase tracking-[0.18em] text-stone-400">
+                          Offered object
+                        </p>
+                        <p class="mt-2 text-xl leading-7 text-stone-100">
+                          {{ interview.object }}
+                        </p>
+                      </div>
+
+                      <div>
+                        <p class="text-sm uppercase tracking-[0.18em] text-stone-400">
+                          Key themes
+                        </p>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                          <span
+                            v-for="theme in interview.themes"
+                            :key="theme"
+                            class="border border-stone-500 px-3 py-1 text-base leading-6 text-stone-200"
+                          >
+                            {{ theme }}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mt-7 border-t border-stone-600 pt-6">
+                      <p class="text-sm uppercase tracking-[0.18em] text-stone-400">
+                        Recording
+                      </p>
+                      <audio class="mt-4 w-full" controls preload="none" :src="interview.audio" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-t border-stone-600">
+                <details
+                  v-for="fragment in interview.fragments"
+                  :key="fragment.title"
+                  class="group border-b border-stone-700 last:border-b-0"
+                >
+                  <summary class="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-xl leading-7 text-stone-100 transition duration-200 hover:bg-stone-100/5 sm:px-8">
+                    <span>{{ fragment.title }}</span>
+                    <span class="text-2xl leading-none text-stone-400 transition duration-200 group-open:rotate-45">+</span>
+                  </summary>
+                  <p class="px-6 pb-7 text-xl leading-9 text-stone-300 sm:px-8">
+                    {{ fragment.text }}
+                  </p>
+                </details>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
