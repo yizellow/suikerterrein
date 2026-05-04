@@ -91,14 +91,24 @@ const aboutSections = [
 
 const interviews = [
   {
-    name: 'Maruschka & Laurens',
-    label: 'Artist duo / ecology / community',
+    name: 'Roeksrariteiten',
+    label: 'Maruschka & Laurens / wonder / nature',
     image: '/images/interview-maruschka-laurens.jpeg',
     object: 'Nettle plant',
     audio: '/audio/maruschka-laurens.mp3',
     quote: 'Something that is rejected can actually be essential.',
-    summary: 'Maruschka and Laurens describe Suikerterrein as a place where low rent, informal exchange, and ecological thinking make artistic work possible, while also questioning whether the terrain functions as one shared community.',
-    themes: ['Low rent as survival', 'Invisible fences', 'Small clusters', 'Nature as social model'],
+    summary: 'Maruschka and Laurens work together through drawing, wonder, practical making, and a shared interest in reconnecting humans with nature.',
+    profiles: [
+      {
+        name: 'Maruschka',
+        text: 'Maruschka has been drawing all her life. During her time at art academy, it became clear to her that what you create can have an impact on people. It does not necessarily have to be art; it should evoke a sense of wonder. One of the most essential themes today, in her view, is reconnecting humans with nature.'
+      },
+      {
+        name: 'Laurens',
+        text: 'Laurens provides practical support. If he does not yet know how to do something, he learns it. From digital work to hands-on making and construction, he applies a wide range of skills to transform a good idea into a great one, especially when working with Maruschka\'s drawings.'
+      }
+    ],
+    themes: ['Ecosystem', 'Weeds', 'Fairytale stories'],
     fragments: [
       {
         title: 'Community is more than proximity',
@@ -122,7 +132,8 @@ const interviews = [
     audio: '/audio/robert.mp3',
     quote: 'We use the area with the uncertainty of life.',
     summary: 'Robert speaks about building his own studio from containers and second-hand materials, accepting the 2030 deadline, and seeing temporary creative places as necessary stepping stones in the city.',
-    themes: ['Self-building', 'Temporary use', 'Uncertainty', 'Cultural memory'],
+    profiles: [],
+    themes: ['Light', 'Colors', 'Uncertainty'],
     fragments: [
       {
         title: 'Building a place from what already lived',
@@ -139,14 +150,15 @@ const interviews = [
     ]
   },
   {
-    name: 'Floris',
-    label: 'Blue Plaza Compagnia / collective building',
+    name: 'Floris Maathuis',
+    label: 'Creative explorations in technology',
     image: '/images/interview-floris.jpeg',
     object: 'Reused building materials',
     audio: '/audio/floris.mp3',
     quote: 'Almost everything here has a story.',
-    summary: 'Floris frames Suikerterrein as a broedplaats: a temporary place where artists and creative workers organized themselves, gathered reused materials, and built a shared working environment on the former sugar factory terrain.',
-    themes: ['Broedplaats', 'Post-industrial reuse', 'Collective organization', 'Future lobbying'],
+    summary: 'Floris Maathuis brings technology and creativity together into tailor-made solutions and innovations. Working with businesses, governments, social and cultural organizations, and many other clients, he develops creative technological approaches for social issues, communication, product innovation, and entertainment.',
+    profiles: [],
+    themes: ['Community', 'Creativity', 'Ecosystem'],
     fragments: [
       {
         title: 'From sugar factory to temporary initiatives',
@@ -166,42 +178,59 @@ const interviews = [
 
 const teamMembers = [
   {
-    name: 'Yize Isaac',
+    name: 'Yize Huang',
     role: 'Researcher / Artist',
     image: '/images/team-yize.jpg',
-    bio: 'I am from Taipei, Taiwan. My practice begins with the body, vulnerability, memory, and states of survival.',
-    reflection: 'For this project, I focus on Suikerterrein as a fragile cultural space where art, memory, and urban transformation intersect.'
+    bio: 'I am from Taipei, Taiwan. My practice often begins with the body, vulnerability, memory, and states of survival. I am interested in how people maintain their form under pressure, isolation, or unstable conditions, and how emotions that cannot be fully articulated leave traces through objects, text, and space. In my work, sculpture is not only an object, but also a body that continues to stand after being wounded. These sculptures may appear broken, tilted, or fragile, yet they remain placed within a space. Through damaged materials, repetition, and accumulation, I try to present a state of being unable to truly fall down: not because of strength, but because some people do not have the privilege to collapse.',
+    reflection: 'This field research focuses on Suikerterrein, a former industrial site that has gradually become a place where art, events, and urban life intersect. Its transformation reminds me of similar spaces in Taiwan, such as old factories, warehouses, abandoned buildings, and marginal areas that have been reused by artists and communities. I am interested in how artistic ecosystems emerge in these places: why artists gather there, how they use or change the space, and how the space influences them. Through Suikerterrein, I hope to observe the relationship between artists, the city, and the changing life of a place.'
   },
   {
-    name: 'Name 2',
-    role: 'Researcher',
-    image: '/images/team-2.jpg',
-    bio: 'Short biography placeholder for a team member involved in field research, interviews, and site observation.',
-    reflection: 'Project reflection placeholder about the relationship between temporary cultural space, community, and urban change.'
+    name: 'YuTzu Hsu',
+    role: 'Interdisciplinary Artist / Researcher',
+    image: '/images/team-yuzu.png',
+    bio: 'She is an interdisciplinary artist whose work often begins with observations of human culture, everyday life, and rituals. Through performance, collective making, and interventions, she explores how relationships between people are formed within specific situations.',
+    reflection: 'Her practice often takes the form of artistic interventions and collective creation, focusing on experiences in everyday life that are difficult to articulate. She explores how bodily memory shapes personal histories and habitual rituals, and how interactions between people influence one another and contribute to the formation of cultural environments. Working with groups and the body as a medium, she tries to transform personal memory into situations that can be experienced and participated in by others, allowing relationships between individuals and collectives to emerge and shift.'
   },
   {
-    name: 'Name 3',
-    role: 'Researcher',
-    image: '/images/team-3.jpg',
-    bio: 'Short biography placeholder for a team member contributing to documentation, analysis, and artistic research.',
-    reflection: 'Project reflection placeholder about what can be learned from artists working in a changing environment.'
+    name: 'Ayeen Fazel',
+    role: 'Artist-facilitator / Researcher',
+    image: '/images/team-Ayeen.jpeg',
+    bio: 'Ayeen Fazel is an artist-facilitator based in Groningen, working at the intersection of installation, storytelling, and participatory practice. Her work focuses on creating spaces where people can explore questions of belonging, land, and human connection through shared experiences. Drawing from personal and collective research, she works with translucent materials, shadow, and text to construct environments where viewers become part of the work. Her practice is rooted in facilitation, inviting reflection through simple yet fundamental questions rather than fixed answers.',
+    reflection: 'I’m very interested in this area because I find it amazing and different from other places in the city. I was curious about what is happening here, the history behind it, how this place became what it is today, and who the people are. I already had some information, but after talking with the artists, I gained a much clearer vision, along with different perspectives. What I found especially interesting is how they built something temporary, but at the same time created something that goes beyond that: an approach and way of living that can continue even after this place is gone.'
   },
   {
-    name: 'Name 4',
-    role: 'Researcher',
-    image: '/images/team-4.jpg',
-    bio: 'Short biography placeholder for a team member working with interview material and field notes.',
-    reflection: 'Project reflection placeholder about memory, place, and the future of cultural communities.'
+    name: 'Leila Mokhtari',
+    role: 'Visual Artist / Ceramic Artist / Researcher',
+    image: '/images/team-leila.png',
+    bio: 'I was born in 1994 in Iran, and for almost ten years my main practice has been in the field of visual art and functional ceramics. My academic background is in sculpture, and most of the artworks I create are three-dimensional. Space is the most fundamental element of my projects, and it can fully represent my thoughts.',
+    reflection: 'As I began working, I became interested in the concept of history and the passing of time, and I try to distinguish its connection with our contemporary world. I am also inspired by ancient architecture, literature, and their bonds with the human soul. While my main career is related to fine art, I launched a ceramic studio a couple of years ago, and a major part of my practice has focused on developing a pottery studio, learning how to collaborate, and making progress through shared work.'
+  },
+  {
+    name: 'Shiva',
+    role: 'Painter / Researcher',
+    image: '/images/team-shiva.jpeg',
+    bio: 'In my recent painting project, I use references to Iranian architectural geometry, tilework, and mirror structures to study adaptive visual sequences through return, shift, absence, fracture, and reconfiguration. Through this, I visually explore how coexistence can be imagined as a balance between autonomy and a shared condition: each work remains independent while responding to one recurring structural logic that connects the series without making it uniform.',
+    reflection: 'I joined this project to extend this question into the context of the Suikerterrein, a temporary artistic community in a former industrial site. I am interested in how artists create continuity within a place whose current cultural use is being reshaped by planned redevelopment, shaped by presence, adaptation, and a shared environment. In conversations with the participating artists, I explore how this community contributes to the cultural memory of the site, leaving traces of presence, practice, and belonging that are not always officially preserved or visibly acknowledged.'
   }
 ]
 
 const currentHeroIndex = ref(0)
+const activeProfileIndexes = ref<Record<string, number>>({})
 let heroInterval: ReturnType<typeof setInterval> | undefined
 
 const currentHeroImage = computed(() => heroImages[currentHeroIndex.value])
 
 const selectHeroImage = (index: number) => {
   currentHeroIndex.value = index
+}
+
+const getActiveProfileIndex = (name: string) => activeProfileIndexes.value[name] ?? 0
+
+const selectProfile = (name: string, index: number) => {
+  activeProfileIndexes.value = {
+    ...activeProfileIndexes.value,
+    [name]: index
+  }
 }
 
 onMounted(() => {
@@ -424,9 +453,33 @@ onBeforeUnmount(() => {
                   </div>
 
                   <div>
-                    <p class="text-xl leading-8 text-stone-200">
+                    <p class="text-lg leading-8 text-stone-200 sm:text-xl">
                       {{ interview.summary }}
                     </p>
+
+                    <div
+                      v-if="interview.profiles.length"
+                      class="mt-7 border-t border-stone-600 pt-5"
+                    >
+                      <div class="grid grid-cols-2 gap-2">
+                        <button
+                          v-for="(profile, profileIndex) in interview.profiles"
+                          :key="profile.name"
+                          type="button"
+                          class="min-h-12 border px-4 py-3 text-left text-base leading-6 transition duration-200"
+                          :class="getActiveProfileIndex(interview.name) === profileIndex ? 'border-stone-100 bg-stone-100 text-[#1f2a27]' : 'border-stone-600 text-stone-300 hover:border-stone-300 hover:text-stone-100'"
+                          @click="selectProfile(interview.name, profileIndex)"
+                        >
+                          {{ profile.name }}
+                        </button>
+                      </div>
+
+                      <div class="mt-5 min-h-[14rem] border-l border-stone-500 pl-5">
+                        <p class="text-lg leading-8 text-stone-100">
+                          {{ interview.profiles[getActiveProfileIndex(interview.name)].text }}
+                        </p>
+                      </div>
+                    </div>
 
                     <div class="mt-7 grid gap-4 border-t border-stone-600 pt-6 sm:grid-cols-2">
                       <div>
@@ -495,42 +548,49 @@ onBeforeUnmount(() => {
             Researchers
           </h2>
           <p class="mt-6 text-xl leading-8 text-neutral-600">
-            This research was developed by four members through interviews, field observation, and artistic reflection.
+            This research was developed by five members through interviews, field observation, and artistic reflection.
           </p>
         </div>
 
-        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-6">
           <article
             v-for="member in teamMembers"
             :key="member.name"
-            class="border border-neutral-300 bg-stone-100"
+            class="grid overflow-hidden border border-neutral-300 bg-stone-100 lg:grid-cols-[18rem_1fr]"
           >
             <img
               :src="member.image"
               :alt="member.name"
-              class="aspect-[4/5] w-full object-cover grayscale-[15%]"
+              class="aspect-[4/5] w-full object-cover grayscale-[15%] lg:h-full"
             >
 
-            <div class="p-6">
+            <div class="p-6 sm:p-8">
               <p class="text-xs uppercase tracking-[0.24em] text-neutral-500">
                 {{ member.role }}
               </p>
 
-              <h3 class="mt-3 text-2xl font-medium text-neutral-900">
+              <h3 class="mt-3 text-3xl font-medium text-neutral-900">
                 {{ member.name }}
               </h3>
 
-              <p class="mt-5 text-base leading-7 text-neutral-700">
-                {{ member.bio }}
-              </p>
+              <div class="mt-6 grid gap-6 xl:grid-cols-2">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                    Practice
+                  </p>
+                  <p class="mt-3 text-base leading-8 text-neutral-700">
+                    {{ member.bio }}
+                  </p>
+                </div>
 
-              <div class="mt-6 border-t border-neutral-300 pt-5">
-                <p class="text-xs uppercase tracking-[0.2em] text-neutral-500">
-                  Reflection
-                </p>
-                <p class="mt-3 text-base leading-7 text-neutral-700">
-                  {{ member.reflection }}
-                </p>
+                <div class="border-t border-neutral-300 pt-5 xl:border-l xl:border-t-0 xl:pl-6 xl:pt-0">
+                  <p class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                    Project focus
+                  </p>
+                  <p class="mt-3 text-base leading-8 text-neutral-700">
+                    {{ member.reflection }}
+                  </p>
+                </div>
               </div>
             </div>
           </article>
