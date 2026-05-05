@@ -96,7 +96,6 @@ const interviews = [
     label: 'Maruschka & Laurens / wonder / nature',
     image: '/images/interview-maruschka-laurens.jpeg',
     object: 'Nettle plant',
-    audio: '/audio/maruschka-laurens.mp3',
     website: {
       label: 'roeksrariteiten.nl',
       url: 'https://roeksrariteiten.nl'
@@ -134,7 +133,6 @@ const interviews = [
     label: 'Stained glass / self-built studio',
     image: '/images/interview-robert.jpeg',
     object: 'A photograph of colored glass',
-    audio: '/audio/robert.mp3',
     website: {
       label: 'glasinloodgroningen.nl',
       url: 'https://www.glasinloodgroningen.nl/'
@@ -163,7 +161,6 @@ const interviews = [
     label: 'Creative explorations in technology',
     image: '/images/interview-floris.jpeg',
     object: 'Reused building materials',
-    audio: '/audio/floris.mp3',
     website: {
       label: 'florismaathuis.nl',
       url: 'https://www.florismaathuis.nl'
@@ -531,13 +528,6 @@ onBeforeUnmount(() => {
                           </span>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="mt-7 border-t border-stone-600 pt-6">
-                      <p class="text-sm uppercase tracking-[0.18em] text-stone-400">
-                        Recording
-                      </p>
-                      <audio class="mt-4 w-full" controls preload="none" :src="interview.audio" />
                     </div>
 
                     <div class="mt-7 border-t border-stone-600 pt-6">
