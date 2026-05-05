@@ -71,7 +71,8 @@ const navItems = [
   { label: 'Introduction', href: '#introduction' },
   { label: 'About Suikerterrein', href: '#about' },
   { label: 'Interviews', href: '#interviews' },
-  { label: 'Team', href: '#team' }
+  { label: 'Team', href: '#team' },
+  { label: 'Contact', href: '#contact' }
 ]
 
 const aboutSections = [
@@ -96,6 +97,10 @@ const interviews = [
     image: '/images/interview-maruschka-laurens.jpeg',
     object: 'Nettle plant',
     audio: '/audio/maruschka-laurens.mp3',
+    website: {
+      label: 'roeksrariteiten.nl',
+      url: 'https://roeksrariteiten.nl'
+    },
     quote: 'Something that is rejected can actually be essential.',
     summary: 'Maruschka and Laurens work together through drawing, wonder, practical making, and a shared interest in reconnecting humans with nature.',
     profiles: [
@@ -111,41 +116,45 @@ const interviews = [
     themes: ['Ecosystem', 'Weeds', 'Fairytale stories'],
     fragments: [
       {
-        title: 'Community is more than proximity',
-        text: 'They distinguish between people simply renting spaces next to each other and a community that actively works together. Suikerterrein contains artists and generous neighbors, but they see the social structure as fragmented, with commercial interests and individual territories shaping the terrain.'
+        title: 'Not every cluster is a community',
+        text: 'Suikerterrein looks like a community from the outside, but Maruschka and Laurens describe something more fragile. People work near each other, share the same terrain, and sometimes help one another, yet proximity alone does not create a collective life.\n\nFor them, a real community begins when people build something together. It needs trust, exchange, and a shared direction. At Suikerterrein, these things appear in small moments: a neighbor helping with welding, a workshop opening its doors, a collaboration growing through personal contact.\n\nBut the site is also full of invisible fences. Some people protect their own territory. Some groups remain separate islands. The community here is not one unified body, but a loose ecology of connections, distances, and small negotiations.'
       },
       {
-        title: 'A practical condition for art',
-        text: 'For them, the low rent was not romantic; it was what made it possible to build an artistic life after art school. Because less income disappears into rent, more energy and money can be invested back into their work.'
+        title: 'Low rent as survival',
+        text: 'For Maruschka and Laurens, Suikerterrein matters first because it made survival possible. After art school, artistic life was not sustained by inspiration alone. It depended on rent, time, tools, and the ability to stop working too many unrelated jobs.\n\nThe low rent allowed them to build a practice without immediately turning everything into profit. Instead of spending most of their income on space, they could put it back into their work.\n\nThis changes the meaning of the terrain. It is not only a place to work. It is a condition that allows artists to keep going, to experiment, and to grow slowly before the outside world demands financial certainty.'
       },
       {
-        title: 'Toward an ecological model',
-        text: 'They imagine a smaller, more community-based and nature-focused future place: not a huge terrain of many companies, but a setting where ten to fifteen people could share a clearer philosophy.'
+        title: 'The nettle as a social model',
+        text: 'Maruschka and Laurens chose the nettle as a symbol for Suikerterrein. A nettle is often treated as a weed, something unwanted or messy. But in an ecosystem, it is essential. Many butterflies depend on it. Without nettles, other forms of life disappear.\n\nThis image becomes a way to understand artist spaces like Suikerterrein. They may look temporary, rough, or inconvenient from the perspective of urban planning. Yet they support practices, relationships, and ways of living that cannot easily exist in polished commercial spaces.\n\nThe nettle shows their central idea: what a city rejects may be exactly what keeps its cultural ecosystem alive.'
       }
     ]
   },
   {
-    name: 'Robert',
+    name: 'Robert Paul Sprenkeling',
     label: 'Stained glass / self-built studio',
     image: '/images/interview-robert.jpeg',
     object: 'A photograph of colored glass',
     audio: '/audio/robert.mp3',
+    website: {
+      label: 'glasinloodgroningen.nl',
+      url: 'https://www.glasinloodgroningen.nl/'
+    },
     quote: 'We use the area with the uncertainty of life.',
-    summary: 'Robert speaks about building his own studio from containers and second-hand materials, accepting the 2030 deadline, and seeing temporary creative places as necessary stepping stones in the city.',
+    summary: 'Robert Paul Sprenkeling is a stained glass artist and founder of Glas in Lood Groningen, a self-built glass workshop on Suikerterrein. His practice combines craft, reuse, teaching, and commissioned stained glass work.',
     profiles: [],
     themes: ['Light', 'Colors', 'Uncertainty'],
     fragments: [
       {
-        title: 'Building a place from what already lived',
-        text: 'Robert designed and built his studio with containers, reused roof plates, old wood, found materials, and help from people with different skills. The building had to meet city rules, but its atmosphere came from making new use of materials with previous lives.'
+        title: 'Building from what already had a life',
+        text: 'Robert did not enter a finished studio. He arrived at a piece of concrete land and had to imagine the building himself. Containers became walls. Roof plates became shelter. Reused wood, old windows, found materials, and other people’s skills slowly turned an empty plot into a working place.\n\nMost of the studio was built from second-hand materials. Some came from the internet, some from demolished sites, some through conversations, and some through coincidence. Robert is drawn to materials that already carry a past.\n\nBecause of this, his studio is not only functional. It feels assembled from different histories. The building holds labor, reuse, memory, and the decision to make something beautiful out of what was available.'
       },
       {
-        title: 'Certainty and openness',
-        text: 'He knows 2030 may be the deadline, but does not want to worry too early. For him, uncertainty is part of how he lives and works: a few things must be stable, while the rest can stay open.'
+        title: 'The certainty of leaving',
+        text: 'Robert knows that Suikerterrein may end around 2030. He does not treat this as a surprise. For him, the deadline has always been part of the agreement: the land is temporary, the buildings may have to move, and nothing here is fully owned.\n\nBut this uncertainty does not make the place meaningless. Robert does not want to spend years worrying before the moment arrives. He accepts that some things need to be secure, such as shelter, health, and the next practical step. Beyond that, the future can remain open.\n\nHis view changes the way Suikerterrein is understood. Temporary does not mean unimportant. It means the value of the place exists in the time, energy, and life that people place into it while it is here.'
       },
       {
         title: 'Stepping stones in the city',
-        text: 'Robert connects Suikerterrein to earlier temporary cultural spaces in Groningen. These places let people meet, work, dance, learn, and briefly step outside ordinary city life; if one disappears, something else has to grow somewhere.'
+        text: 'Robert sees Suikerterrein as part of a wider network of temporary cultural spaces in Groningen. These places appear in empty buildings, forgotten corners, or areas waiting for redevelopment. They give people room to work, meet, dance, learn, and briefly step outside the normal rhythm of the city.\n\nOften, people only recognize their value when they are about to disappear. Visitors come and say that such places should stay forever. But Robert suggests that their temporary nature may also be what keeps them alive, flexible, and open.\n\nFor him, the question is not only how to save Suikerterrein. The bigger question is whether the city can keep making room for new temporary spaces to emerge when old ones vanish.'
       }
     ]
   },
@@ -155,6 +164,10 @@ const interviews = [
     image: '/images/interview-floris.jpeg',
     object: 'Reused building materials',
     audio: '/audio/floris.mp3',
+    website: {
+      label: 'florismaathuis.nl',
+      url: 'https://www.florismaathuis.nl'
+    },
     quote: 'Almost everything here has a story.',
     summary: 'Floris Maathuis brings technology and creativity together into tailor-made solutions and innovations. Working with businesses, governments, social and cultural organizations, and many other clients, he develops creative technological approaches for social issues, communication, product innovation, and entertainment.',
     profiles: [],
@@ -162,15 +175,15 @@ const interviews = [
     fragments: [
       {
         title: 'From sugar factory to temporary initiatives',
-        text: 'Floris explains the site through its industrial past: the former factory, the canal, the vloeivelden, and the decision to use the area for temporary initiatives after demolition.'
+        text: 'Floris begins with the site’s industrial past. Suikerterrein was once part of a large sugar factory, connected to canals, processing fields, and the production of sugar from beets. The area was shaped by work, infrastructure, and heavy industry long before artists arrived.\n\nAfter the factory disappeared, the city allowed the land to be used for temporary initiatives. This created a rare opening: a large piece of urban space that was not yet fully controlled by housing plans, commercial development, or fixed architecture.\n\nIn that gap, artists and makers entered. What used to be a factory terrain became a place for studios, workshops, experiments, and self-built structures. The site moved from industrial production to cultural production.'
       },
       {
         title: 'A club of makers',
-        text: 'The group organized itself like an association with members, shared contributions, crowdfunding, and borrowed money. Their spaces were assembled from second-hand structures: beach houses, garden sheds, army units, shipping containers, and other salvaged materials.'
+        text: 'Floris describes the group as a kind of club or association. People became members, contributed money, crowdfunded, borrowed from friends and family, searched for materials, and built the place together.\n\nNothing arrived ready-made. A beach house became a workspace. A garden shed was taken apart and rebuilt. Containers became structures. Old military units, ship containers, salvaged wood, and second-hand parts found new functions.\n\nThis makes the terrain feel like a collective construction rather than a designed campus. Almost everything has a story. The buildings show not only what people needed, but also how they solved problems together with limited resources.'
       },
       {
         title: 'What survives after 2030',
-        text: 'People are already talking with the city and lobbying for parts of what evolved here to be included in future development. The concern is not only preserving buildings, but preserving the possibility of making, gathering, and experimenting.'
+        text: 'Floris knows that the future of Suikerterrein is uncertain. Housing development is already moving closer, and the current use of the terrain is expected to end around 2030. People are now organizing, discussing, and lobbying the city to see whether parts of what grew here can remain.\n\nBut the real question is not only whether the buildings survive. The deeper question is whether the conditions survive: affordable space, shared responsibility, freedom to build, access to materials, and time for creative practices to develop slowly.\n\nIf Suikerterrein disappears, the physical site may be cleared. But what matters is whether the city understands what was produced here: not only objects or events, but a way of making space together.'
       }
     ]
   }
@@ -206,11 +219,24 @@ const teamMembers = [
     reflection: 'As I began working, I became interested in the concept of history and the passing of time, and I try to distinguish its connection with our contemporary world. I am also inspired by ancient architecture, literature, and their bonds with the human soul. While my main career is related to fine art, I launched a ceramic studio a couple of years ago, and a major part of my practice has focused on developing a pottery studio, learning how to collaborate, and making progress through shared work.'
   },
   {
-    name: 'Shiva',
+    name: 'Shiva Miryektah',
     role: 'Painter / Researcher',
     image: '/images/team-shiva.jpeg',
     bio: 'In my recent painting project, I use references to Iranian architectural geometry, tilework, and mirror structures to study adaptive visual sequences through return, shift, absence, fracture, and reconfiguration. Through this, I visually explore how coexistence can be imagined as a balance between autonomy and a shared condition: each work remains independent while responding to one recurring structural logic that connects the series without making it uniform.',
     reflection: 'I joined this project to extend this question into the context of the Suikerterrein, a temporary artistic community in a former industrial site. I am interested in how artists create continuity within a place whose current cultural use is being reshaped by planned redevelopment, shaped by presence, adaptation, and a shared environment. In conversations with the participating artists, I explore how this community contributes to the cultural memory of the site, leaving traces of presence, practice, and belonging that are not always officially preserved or visibly acknowledged.'
+  }
+]
+
+const contactPeople = [
+  {
+    name: 'YuTzu',
+    email: 'harleyhsu1997@gmail.com',
+    phone: '+31 619120184'
+  },
+  {
+    name: 'Ayeen',
+    email: 'fazel.ayeen@gmail.com',
+    phone: '+31 657415641'
   }
 ]
 
@@ -513,6 +539,20 @@ onBeforeUnmount(() => {
                       </p>
                       <audio class="mt-4 w-full" controls preload="none" :src="interview.audio" />
                     </div>
+
+                    <div class="mt-7 border-t border-stone-600 pt-6">
+                      <p class="text-sm uppercase tracking-[0.18em] text-stone-400">
+                        Website
+                      </p>
+                      <a
+                        :href="interview.website.url"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="mt-3 inline-flex border border-stone-500 px-3 py-2 text-base leading-6 text-stone-200 transition duration-200 hover:border-stone-200 hover:text-stone-50"
+                      >
+                        {{ interview.website.label }}
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -538,7 +578,7 @@ onBeforeUnmount(() => {
       </div>
     </section>
 
-    <section id="team" class="scroll-mt-24 bg-stone-50 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
+    <section id="team" class="scroll-mt-24 border-b border-neutral-300 bg-stone-50 px-4 py-20 sm:px-6 lg:px-8 lg:py-28">
       <div class="mx-auto max-w-7xl">
         <div class="mb-12 max-w-3xl">
           <p class="text-base uppercase tracking-[0.22em] text-neutral-500">
@@ -595,6 +635,69 @@ onBeforeUnmount(() => {
             </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section id="contact" class="scroll-mt-24 bg-[#f2efe8] px-4 py-16 text-neutral-900 sm:px-6 lg:px-8 lg:py-20">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 border-b border-neutral-300 pb-12 md:grid-cols-[0.7fr_1.3fr] md:items-end">
+          <div>
+            <p class="text-base uppercase tracking-[0.22em] text-neutral-500">
+              Contact
+            </p>
+            <h2 class="mt-4 text-5xl font-normal leading-tight text-neutral-950 sm:text-6xl">
+              Keep in touch
+            </h2>
+          </div>
+
+          <p class="max-w-3xl text-xl leading-8 text-neutral-600 md:justify-self-end md:text-right">
+            For questions about the research, interviews, or project material, please contact YuTzu or Ayeen.
+          </p>
+        </div>
+
+        <div class="grid border-b border-neutral-300 md:grid-cols-2">
+          <article
+            v-for="person in contactPeople"
+            :key="person.email"
+            class="border-neutral-300 py-9 md:px-8 md:first:border-r md:first:pl-0 md:last:pr-0"
+          >
+            <div class="grid gap-8 sm:grid-cols-[0.45fr_1fr]">
+              <h3 class="text-4xl font-normal leading-tight text-neutral-950 sm:text-5xl">
+                {{ person.name }}
+              </h3>
+
+              <div class="grid gap-6">
+                <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                    Email
+                  </p>
+                  <a
+                    :href="`mailto:${person.email}`"
+                    class="mt-2 block break-words text-lg leading-7 text-neutral-700 transition duration-200 hover:text-neutral-950 sm:text-xl"
+                  >
+                    {{ person.email }}
+                  </a>
+                </div>
+
+                <div>
+                  <p class="text-xs uppercase tracking-[0.2em] text-neutral-500">
+                    Phone
+                  </p>
+                  <a
+                    :href="`tel:${person.phone.replaceAll(' ', '')}`"
+                    class="mt-2 block text-lg leading-7 text-neutral-700 transition duration-200 hover:text-neutral-950 sm:text-xl"
+                  >
+                    {{ person.phone }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="pt-8 text-sm uppercase tracking-[0.2em] text-neutral-500">
+          Suikerterrein artist research / Groningen
+        </p>
       </div>
     </section>
   </main>
